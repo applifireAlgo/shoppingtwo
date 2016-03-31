@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-03-31T14:17:39" hostname="3bf93d6a7666" time="0.324">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.146"/>
+  <testcase name="test2Update" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.038"/>
+  <testcase name="test3FindById" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.01"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.025"/>
+  <testcase name="test6Delete" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.086"/>
+  <testcase name="testNQFindMappedUser" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.011"/>
+  <testcase name="testNQFindUnMappedUser" classname="com.app.server.service.aaaboundedcontext.authentication.LoginTestCase" time="0.006"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-31 14:17:39.142--ClientSession(1562475375)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [B3BCB434-4BFC-4380-B18E-5D5F2E9FDE2B, 2fc2hpI9DE4lh8pB75BaD81WaQrQTaGESkbR9n2EZjDtwXRsib, 9H5Efu5wHbUapp3sZoUF1BLPM0NUooNV5VVSocwnCMscAafbho, f9ggRqhiORI5vchlzamxZdm9PQsprvFzCjZ8gucWOPl2wz3hMW, pXJNPSOlr3ekOgkv5GoDCdOYUXRY5hsLlUjlHcEg0UbKWdlcjj, 71046, 1, AAAAA, 2016-03-31 14:17:39.137, null, 2016-03-31 14:17:39.137, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.151--ClientSession(831253153)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8A4E4E4F-1031-459F-AC22-618D9403BCF6, 1XP5iUWwE9AnQO571Txdge2YSFk0XL7lsDESmfIsaXgt3oBgjb, xsvSg3VnfXMWiHmsTXBPg5PombMK0tqdTOL0SRgNlLOtW0N1PV, Z6pYmFHa2bGmCsZAhYeRLHCpFlr7D6SJZqrTTdctIBjEdyWlLR, oJtE6umjBlNrhts36lMi3N4Sb1orMRF4DWnwdHtY7NyFceXQyD, 40055, 1, AAAAA, 2016-03-31 14:17:39.146, null, 2016-03-31 14:17:39.146, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.159--ClientSession(1835161074)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Question_M (questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [CFF771C8-5219-44D7-81B9-E04912E73443, 8, H6S3Da4dKdRWq9CV1smV1cmLJ6sNFii6AZ8itOHjo7QPJHczss, 0YTBj7IwEl, RhzockrIEnMZC6Si8Fo0qzVPAOgb0PdFriPQtYEQihMIblneTI, 1, AAAAA, 2016-03-31 14:17:39.155, null, 2016-03-31 14:17:39.155, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.166--ClientSession(918611541)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [C8F8247B-57B4-4467-AAE4-CFB9DC87DA59, Sa, sI6, XOw9, 9, SSpv3Fb2HE6pdNEIrEr5EiqZCRtDLiCnklWLbOSV7VcbaE9WdM, pXHIaylF5KH7w4mLAENSx67vgJVMVKhwejnxDZMc5evdcLZWLW, Xj7EeUwdntgNKkyxlEKFUWbuehcVsZ3Hg3ZHHBEXP8HDQEoKO6, lwkfYSSuupFed6pNgp4GPRA6oOhN2fMm, 1, AAAAA, 2016-03-31 14:17:39.163, null, 2016-03-31 14:17:39.163, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.172--ClientSession(815316242)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [508A4C1A-B213-4213-A6EF-EFCAA7399D3B, 7h3pI29XvbB0x1qbX0Y3dobKlT9Tmgi3UAER6DFTNimIZObbJf, 1, AAAAA, 2016-03-31 14:17:39.17, null, 2016-03-31 14:17:39.17, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.177--ClientSession(1327628096)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [ABB16195-F488-4FFE-B647-E915080061BD, m1opMZ85gtHBDbA99WizspQR19jsjI0ti4oVxELeO6KWkbLqVc, 1, AAAAA, 2016-03-31 14:17:39.175, null, 2016-03-31 14:17:39.175, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.183--ClientSession(275723515)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62, JkXKhztbofGcvdUbb3018B1LDNdnoj24RGJNEtb4s0TkdayBgF, 8AR98vq7KIYVrXSWagKzjUHYJliQwAht1jaSKNJ7UNMeKWjLKS, 502xpx36o1zFhjCfbiI7gp92Shx5m6EBZj0M3GovXH5gh9ZQ2K, iDzgGTgRcGa5LuustXt3yDBwKsZVj5nUIOGFcaInX6VsVUx19L, 4, 1, AAAAA, 2016-03-31 14:17:39.163, null, 2016-03-31 14:17:39.163, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.189--ClientSession(157395538)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1E783FA8-CCE6-4688-BCD1-0DF4DA6A28E0, g8kQo5k21IjmVZfz5pjq1DLNvefv91F6UUb3R87i32BF9UJuIb, UA6MzVWYEIiLEiPgnK8E65Nusbaoy6vh64yoOpTzcA6H0ofEMm, Xrq01aAJohohMmaF5fOW8OjYFEUWhYpaSva6Aaf14Gp3EKK7ZS, 1, AAAAA, 2016-03-31 14:17:39.187, null, 2016-03-31 14:17:39.187, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.197--ClientSession(1422750322)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [18E819A9-A41A-4D5A-8357-08A1BA4D86F5, 31EdXkou838F6FcFsQUVm17ibE9pPQn4, 11, 4, gRx, c18, GH0AxZoXiDgPnGFTapk0xuS8OjEk2g0ujvkVeYfesFFRiPAWDi, ljTAF7TqBjIgkX6xrmBgjPE0LKZ2h7U2sTUzkJEBGfYULtvvYu, 1e4, gRn3mZDrdGM4jq9do7LSO8d77XLW4bp0DbRb404v3XXQbbaNUe, m3PuwNOkXmWJbZ18I1r28zS7nIAsUtow, 537, 1, AAAAA, 2016-03-31 14:17:39.193, null, 2016-03-31 14:17:39.193, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.204--ClientSession(590628222)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [64845E6D-1D11-4EF4-883C-8267B4FE2F54, 18E819A9-A41A-4D5A-8357-08A1BA4D86F5, 64BFn7ZmMjLrmVuIvZruzQ3eOPO5RpbwuX3aRKCkXaTTu9AVHD, 9, 9, 1, f2ktjxoTR95DJ5lK04Mxp745Vj44tdUu, KeOSBITLwLJD47hNkFvX7x4C1ra5GicO, D0IjFWN6S8jTbR5RrtVllOEKtBUz95cntOWHYbpxI8dTrcWOpD, cOIFPf84Md1zqixDZ9vfIbkegZ7PQGKqwIWr3S2IzrXH4G6OMz, wwQfavdUZTMhL8ZKycgthdNnh5gGOY5hc3dxPqm81ctqwZTPTz, 1, AAAAA, 2016-03-31 14:17:39.193, null, 2016-03-31 14:17:39.193, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.211--ClientSession(42084656)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7A796A8F-0DE7-4AC0-B2E2-DD61ED9A8930, 1, DX1wO3I2fzn95U3psmGLvXjrwmqlqbyL, 3ILogjyBLot87Cr7unDhOz6pX3px3F0nOJ4mBAE18Kk6GTjCDL, 9GmRli6jIh9HbpjwDQGQrmCZoDsLdbht2Id5LA67cU2kUCZH3D, 3, 9, SuMBdYDSYwZ6iY3oM7vU1fTgWbchWXzlfW8L0O8Ir6clAAn4dX, 18E819A9-A41A-4D5A-8357-08A1BA4D86F5, 64845E6D-1D11-4EF4-883C-8267B4FE2F54, 1, AAAAA, 2016-03-31 14:17:39.193, null, 2016-03-31 14:17:39.193, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.218--ClientSession(728529267)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationGroup_M (commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [22639FF7-4D87-47EC-A025-09FBE29A56E5, mAJZLP5Vkge8USw9kRfi7ospnAEXx2emnpyz0Mx5W6eH6InImv, DkoAtSPVex54MRU4xJoPjMYbS4nm4U38vD95Glap24J29uMekU, 1, AAAAA, 2016-03-31 14:17:39.215, null, 2016-03-31 14:17:39.215, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.224--ClientSession(1740462939)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationType_M (commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [12E56320-3635-40EB-832B-BDD607054C9D, 22639FF7-4D87-47EC-A025-09FBE29A56E5, IgMEa5gCsnThzVXWumxX54ei7fpT04nfwiWkE6SI90ZCKZCXFA, 89BtDoemBQLeScqkEgpJHV7sDAhw7pWb7OqNVJmZtm1LcYLC5J, 1, AAAAA, 2016-03-31 14:17:39.215, null, 2016-03-31 14:17:39.215, 1, 51000]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-31 14:17:39.234--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.235--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CoreContacts_T (contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967, 53, 2016-03-31 13:55:00.518, 2016-03-31 13:55:00.518, teqSxMlaE7QHk7TKrBVG4erPeJFGHiOgzCn6SFqNR9FEzlWeF0, FurGxi3YslDBKeqpWxbb7EPXZEwekDSmkTY3h3V2UMY1TEkObp, ABB16195-F488-4FFE-B647-E915080061BD, oC5060ij7OV4M5hBi7DbkbGV6fNCFknyhT69de01lBYzGKgwLa, MbdKXQugJCBH0MVVzAYywj4sTIhh0tgAHt0fXGo3ZCzHqtbWgT, 2s7zT7VadWUoeSiNrMCvARqHvBo8sM6nM6afKeay7bSXc07un9, C8F8247B-57B4-4467-AAE4-CFB9DC87DA59, Np2uAA3ZJ0eoK9qjuHWVPHJvyNxkz3dthdTTb7Hm3J2Hx7r1Rt, L5Af7HzlNy5DCd4NFXCcDFDv0Bcj7VkXU2dudMwnrNhO0RCk0U, tyxFUYvOEQgaD99Ja1K3LXjuvCYZrMqvHrew7AtdSHcMH8X5bz, r3cElwjhtUimAXZPZgBQ, 508A4C1A-B213-4213-A6EF-EFCAA7399D3B, 1, AAAAA, 2016-03-31 14:17:39.163, null, 2016-03-31 14:17:39.163, 1, 51000, 92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.236--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_User_T (userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206, 1, 1, 1, 1, 1, 2016-03-31 13:54:59.059, 1, aRsVF0Z14KrAcJk9JW6Y632rni4WMdy7NiQpE2jLYR3q3fgJLV, 2016-03-31 13:54:59.059, 1629, 42510, B3BCB434-4BFC-4380-B18E-5D5F2E9FDE2B, 8A4E4E4F-1031-459F-AC22-618D9403BCF6, 1, AAAAA, 2016-03-31 14:17:39.137, null, 2016-03-31 14:17:39.137, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.237--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Login_T (loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [B0807BB6-8A21-4EFD-9030-DEBEB401804D, 9, jHsTw7N2co9GabEwyJGPIpV33BjWkH96BQ8eq5jG8xmW9myBQn, 7VihdGCbgv3kfRKWr2FEAkBUpeYGH7KF, DWkeQ8YGqSU6FPm6, 1, AAAAA, 2016-03-31 14:17:39.228, null, 2016-03-31 14:17:39.228, 1, 51000, 2EB686A6-BC67-472F-9BDC-FE6D639B3967, D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.238--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_PassRecovery_TP (passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9194866D-3A98-4F6A-802F-E157AAE49B01, snlkslMV5uWdYRtTvBfB3uD8EUoX37m6ZdPujISSt28rmaQwXG, CFF771C8-5219-44D7-81B9-E04912E73443, 1, AAAAA, 2016-03-31 14:17:39.155, null, 2016-03-31 14:17:39.155, 1, 51000, D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.239--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserData_TP (userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [42F77032-4104-436D-A69C-C43B232BE194, 7J22lgriJVddYRLAT857jOHh9BYn7IBEJNWeMTU3Zm6hIdMUQF, Y5bFG5Athx55bN3AFKdy0MVqMUFd9pTd, 4, 2016-03-31 13:54:59.718, T2gAA1byOx3p8IWHraXJjE30OXyXbMbhTmJ6Uph9wChPcJddu9, 1, AAAAA, 2016-03-31 14:17:39.163, null, 2016-03-31 14:17:39.163, 1, 51000, D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.24--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationData_TP (commDataId, commData, commGroupId, commType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [DFE79C0A-92FC-4B65-9341-4DEE5A63A87C, , 22639FF7-4D87-47EC-A025-09FBE29A56E5, 12E56320-3635-40EB-832B-BDD607054C9D, 1, AAAAA, 2016-03-31 14:17:39.215, null, 2016-03-31 14:17:39.215, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.242--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8FB8050A-038E-4C54-82AB-05D2064CB07D, C5VqgKDZn5op9b9oWnsYLlnHLWb10itra1lAQB9sv4bk4FqXgF, rriufeLKuoP08xkrzmdWfj9nI7XZBh8k2kOh7ctth8m81HRdc9, raQ987rsxeJ0YhaRor0hgAa7VJRSamodPXnK7JI7ryt4E3ZXCG, wVrICEhpUMx, 1E783FA8-CCE6-4688-BCD1-0DF4DA6A28E0, 7A796A8F-0DE7-4AC0-B2E2-DD61ED9A8930, 18E819A9-A41A-4D5A-8357-08A1BA4D86F5, cntETz79Ymb55fDe0VbiKNL0uwHcaT8IEaSi3GTCH12SHFW7Qh, 6Fr96IZBWSmp1S5Q3b7SGxGcYnmEfPJBBUQeWwilhRk6KMKGSK, 64845E6D-1D11-4EF4-883C-8267B4FE2F54, 1, zTelwb, AAAAA, 2016-03-31 14:17:39.187, null, 2016-03-31 14:17:39.187, 1, 51000]
+[EL Fine]: sql: 2016-03-31 14:17:39.247--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressMap_B (addressId, contactId) VALUES (?, ?)
+	bind => [8FB8050A-038E-4C54-82AB-05D2064CB07D, 2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.248--ClientSession(70360712)--Connection(846009143)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationMap_B (commDataId, contactId) VALUES (?, ?)
+	bind => [DFE79C0A-92FC-4B65-9341-4DEE5A63A87C, 2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.256--ClientSession(2102825612)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE ((activeStatus = ?) AND (loginPk = ?))
+	bind => [1, B0807BB6-8A21-4EFD-9030-DEBEB401804D]
+[EL Fine]: sql: 2016-03-31 14:17:39.258--ClientSession(2102825612)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.259--ClientSession(2102825612)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.26--ClientSession(2102825612)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.261--ClientSession(2102825612)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-31 14:17:39.263--ServerSession(1899465555)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-31 14:17:39.264--ServerSession(1899465555)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-31 14:17:39.265--ServerSession(1899465555)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-31 14:17:39.27--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE (loginPk = ?)
+	bind => [B0807BB6-8A21-4EFD-9030-DEBEB401804D]
+[EL Fine]: sql: 2016-03-31 14:17:39.271--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.272--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.273--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.274--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.275--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.276--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.278--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.28--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_CoreContacts_T SET updatedBy = ?, versionId = ? WHERE ((contactId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 2EB686A6-BC67-472F-9BDC-FE6D639B3967, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.281--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_User_T SET updatedBy = ?, versionId = ? WHERE ((userId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, D0B96D9B-6EF5-46C7-B801-344901C7A206, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.282--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_Login_T SET failedLoginAttempts = ?, loginId = ?, serverAuthImage = ?, serverAuthText = ?, updatedBy = ?, versionId = ? WHERE ((loginPk = ?) AND (versionId = ?))
+	bind => [10, SS0cPEedXjZ2Emk0RUnRnNo5csaTNTFXTx5WnrlIMVoAorQgtB, jkIz59mnzJc7arfCJlfKcFFfd517H9gN, qxhw8z1BPs3rUyov, AAAAA, 2, B0807BB6-8A21-4EFD-9030-DEBEB401804D, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.283--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_PassRecovery_TP SET updatedBy = ?, versionId = ? WHERE ((passRecoveryId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 9194866D-3A98-4F6A-802F-E157AAE49B01, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.284--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserData_TP SET updatedBy = ?, versionId = ? WHERE ((userDataId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 42F77032-4104-436D-A69C-C43B232BE194, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.284--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_CommunicationData_TP SET updatedBy = ?, versionId = ? WHERE ((commDataId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, DFE79C0A-92FC-4B65-9341-4DEE5A63A87C, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.285--ClientSession(1323050445)--Connection(846009143)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET updatedBy = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 8FB8050A-038E-4C54-82AB-05D2064CB07D, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.294--ClientSession(1199878118)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE ((activeStatus = ?) AND (loginPk = ?))
+	bind => [1, B0807BB6-8A21-4EFD-9030-DEBEB401804D]
+[EL Fine]: sql: 2016-03-31 14:17:39.295--ClientSession(1199878118)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.296--ClientSession(1199878118)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.297--ClientSession(1199878118)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.298--ClientSession(1199878118)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.33--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE (loginPk = ?)
+	bind => [B0807BB6-8A21-4EFD-9030-DEBEB401804D]
+[EL Fine]: sql: 2016-03-31 14:17:39.331--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.333--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [92A08055-8ED3-41BE-8B33-7FE5189EAC62]
+[EL Fine]: sql: 2016-03-31 14:17:39.334--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.335--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.336--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.337--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.338--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206]
+[EL Fine]: sql: 2016-03-31 14:17:39.34--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressMap_B WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.341--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationMap_B WHERE (contactId = ?)
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967]
+[EL Fine]: sql: 2016-03-31 14:17:39.342--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [8FB8050A-038E-4C54-82AB-05D2064CB07D, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.342--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationData_TP WHERE ((commDataId = ?) AND (versionId = ?))
+	bind => [DFE79C0A-92FC-4B65-9341-4DEE5A63A87C, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.343--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserData_TP WHERE ((userDataId = ?) AND (versionId = ?))
+	bind => [42F77032-4104-436D-A69C-C43B232BE194, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.344--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_PassRecovery_TP WHERE ((passRecoveryId = ?) AND (versionId = ?))
+	bind => [9194866D-3A98-4F6A-802F-E157AAE49B01, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.345--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Login_T WHERE ((loginPk = ?) AND (versionId = ?))
+	bind => [B0807BB6-8A21-4EFD-9030-DEBEB401804D, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.346--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_User_T WHERE ((userId = ?) AND (versionId = ?))
+	bind => [D0B96D9B-6EF5-46C7-B801-344901C7A206, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.347--ClientSession(1008879671)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CoreContacts_T WHERE ((contactId = ?) AND (versionId = ?))
+	bind => [2EB686A6-BC67-472F-9BDC-FE6D639B3967, 2]
+[EL Fine]: sql: 2016-03-31 14:17:39.351--ClientSession(505472011)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE (commType = ?)
+	bind => [12E56320-3635-40EB-832B-BDD607054C9D]
+[EL Fine]: sql: 2016-03-31 14:17:39.352--ClientSession(505472011)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationType_M WHERE ((commType = ?) AND (versionId = ?))
+	bind => [12E56320-3635-40EB-832B-BDD607054C9D, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.356--ClientSession(711841638)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE (commGroupId = ?)
+	bind => [22639FF7-4D87-47EC-A025-09FBE29A56E5]
+[EL Fine]: sql: 2016-03-31 14:17:39.357--ClientSession(711841638)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationGroup_M WHERE ((commGroupId = ?) AND (versionId = ?))
+	bind => [22639FF7-4D87-47EC-A025-09FBE29A56E5, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.361--ClientSession(36044411)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [7A796A8F-0DE7-4AC0-B2E2-DD61ED9A8930]
+[EL Fine]: sql: 2016-03-31 14:17:39.362--ClientSession(36044411)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [7A796A8F-0DE7-4AC0-B2E2-DD61ED9A8930, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.366--ClientSession(1074597258)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [64845E6D-1D11-4EF4-883C-8267B4FE2F54]
+[EL Fine]: sql: 2016-03-31 14:17:39.367--ClientSession(1074597258)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [64845E6D-1D11-4EF4-883C-8267B4FE2F54, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.371--ClientSession(1949714360)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [18E819A9-A41A-4D5A-8357-08A1BA4D86F5]
+[EL Fine]: sql: 2016-03-31 14:17:39.373--ClientSession(1949714360)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [18E819A9-A41A-4D5A-8357-08A1BA4D86F5, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.377--ClientSession(1227956371)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [1E783FA8-CCE6-4688-BCD1-0DF4DA6A28E0]
+[EL Fine]: sql: 2016-03-31 14:17:39.378--ClientSession(1227956371)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [1E783FA8-CCE6-4688-BCD1-0DF4DA6A28E0, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.381--ClientSession(741759347)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [ABB16195-F488-4FFE-B647-E915080061BD]
+[EL Fine]: sql: 2016-03-31 14:17:39.383--ClientSession(741759347)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [ABB16195-F488-4FFE-B647-E915080061BD, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.387--ClientSession(1228406930)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [508A4C1A-B213-4213-A6EF-EFCAA7399D3B]
+[EL Fine]: sql: 2016-03-31 14:17:39.388--ClientSession(1228406930)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Title_M WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [508A4C1A-B213-4213-A6EF-EFCAA7399D3B, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.392--ClientSession(1412916177)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [C8F8247B-57B4-4467-AAE4-CFB9DC87DA59]
+[EL Fine]: sql: 2016-03-31 14:17:39.393--ClientSession(1412916177)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [C8F8247B-57B4-4467-AAE4-CFB9DC87DA59, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.397--ClientSession(1489202487)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE (questionId = ?)
+	bind => [CFF771C8-5219-44D7-81B9-E04912E73443]
+[EL Fine]: sql: 2016-03-31 14:17:39.398--ClientSession(1489202487)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Question_M WHERE ((questionId = ?) AND (versionId = ?))
+	bind => [CFF771C8-5219-44D7-81B9-E04912E73443, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.402--ClientSession(1218837471)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [8A4E4E4F-1031-459F-AC22-618D9403BCF6]
+[EL Fine]: sql: 2016-03-31 14:17:39.403--ClientSession(1218837471)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [8A4E4E4F-1031-459F-AC22-618D9403BCF6, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.407--ClientSession(538989046)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [B3BCB434-4BFC-4380-B18E-5D5F2E9FDE2B]
+[EL Fine]: sql: 2016-03-31 14:17:39.408--ClientSession(538989046)--Connection(846009143)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [B3BCB434-4BFC-4380-B18E-5D5F2E9FDE2B, 1]
+[EL Fine]: sql: 2016-03-31 14:17:39.417--ClientSession(1578209558)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId))
+	bind => [1]
+[EL Fine]: sql: 2016-03-31 14:17:39.418--ClientSession(1578209558)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [A06E9BF3-74EB-4D67-9CB1-998AE709C645]
+[EL Fine]: sql: 2016-03-31 14:17:39.419--ClientSession(1578209558)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [B87E5A41-C0D2-4114-9FDD-9B5BD10FC9C4]
+[EL Fine]: sql: 2016-03-31 14:17:39.42--ClientSession(1578209558)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [18D01ABF-F632-496A-B379-FC50EDEAB8C0]
+[EL Fine]: sql: 2016-03-31 14:17:39.421--ClientSession(1578209558)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [18D01ABF-F632-496A-B379-FC50EDEAB8C0]
+[EL Fine]: sql: 2016-03-31 14:17:39.428--ClientSession(1889755763)--Connection(846009143)--Thread(Thread[Test worker,5,main])--SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId NOT IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId))
+	bind => [1]
+]]></system-out>
+  <system-err><![CDATA[com.app.shared.aaaboundedcontext.authentication.Login.loginId may not be null
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /com.app.shared.aaaboundedcontext.authentication.Login.loginId may not be null
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at com.app.shared.aaaboundedcontext.authentication.Login.isValid(Login.java:225)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.validateLogin(LoginTestCase.java:527)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.test5NegativeTesting(LoginTestCase.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+com.app.shared.aaaboundedcontext.authentication.Login.loginId size must be between 0 and 200
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /com.app.shared.aaaboundedcontext.authentication.Login.loginId size must be between 0 and 200
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at com.app.shared.aaaboundedcontext.authentication.Login.isValid(Login.java:225)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.validateLogin(LoginTestCase.java:525)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.test5NegativeTesting(LoginTestCase.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+com.app.shared.aaaboundedcontext.authentication.Login.serverAuthImage size must be between 0 and 32
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /com.app.shared.aaaboundedcontext.authentication.Login.serverAuthImage size must be between 0 and 32
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at com.app.shared.aaaboundedcontext.authentication.Login.isValid(Login.java:225)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.validateLogin(LoginTestCase.java:525)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.test5NegativeTesting(LoginTestCase.java:572)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+com.app.shared.aaaboundedcontext.authentication.Login.serverAuthText size must be between 0 and 16
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /com.app.shared.aaaboundedcontext.authentication.Login.serverAuthText size must be between 0 and 16
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at com.app.shared.aaaboundedcontext.authentication.Login.isValid(Login.java:225)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.validateLogin(LoginTestCase.java:525)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.test5NegativeTesting(LoginTestCase.java:577)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+com.app.shared.aaaboundedcontext.authentication.Login.failedLoginAttempts must be less than or equal to 11
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /com.app.shared.aaaboundedcontext.authentication.Login.failedLoginAttempts must be less than or equal to 11
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at com.app.shared.aaaboundedcontext.authentication.Login.isValid(Login.java:225)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.validateLogin(LoginTestCase.java:525)
+	at com.app.server.service.aaaboundedcontext.authentication.LoginTestCase.test5NegativeTesting(LoginTestCase.java:582)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>

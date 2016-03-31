@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppLogConfig>
+<LoggingProperties>
+ <eventQueueSize value="100000"/>
+<!--Refresh Time to reload this configuration file In a production environment, if you want to debug a specific component you can change the Alarm Log Levels (for specific Target like File, DB etc) of that specific components. Once the configuration is refreshed new Log Events will be written to the configured Target (File, DB etc). This will help to isolate and troubleshoot a production environment without shutting down the application. -->
+<refresh timeUnit="minutes">0</refresh><!--Logging Framework is Asynchronous in nature. Log Events goes to the Queue first and connectors takes the event from the queue for processing. Event Queue Type 0 - Circular Queue (RECOMMENDED) 1 - Infinite Queue with Initial Capacity and events will be wrapped in Soft References (JVM will garbage collect these soft references when it runs out of memory). 2 - Infinite Queue (NOT RECOMMENDED)-->
+<eventQueueType value="0"/>
+
+<eventSeverity>
+<map>
+<property id="4555E41F-E077-4B17-B6DC-0BAF3A28AE79" name="2">Info</property>
+<property id="4B2D6CAB-AD5C-4729-9017-CBE6C604A2F6" name="5">Fatal</property>
+<property id="5071BB08-4531-4AD5-A218-8E060D0703A4" name="1">Trace</property>
+<property id="8893D620-1237-4928-A1C0-24CC258C9963" name="0">Debug</property>
+<property id="DE711BC3-5AE9-45EB-93BE-2F45E6404B6E" name="3">Warning</property>
+<property id="E46ED42E-2EA6-45A4-A8D6-1AD5DCF2F055" name="4">Critical</property>
+</map>
+</eventSeverity>
+</LoggingProperties>
+<connectors>
+<connector cid="2" logLevel="2">
+<name enable="true" class="com.spartan.sprinkler.connectors.db.DBConnector"  id="db.connector" isSystemDefined="true">DatabaseConnector</name>
+<map>
+<!-- JDBC Batch Size -->
+<attribute name="batchSize">500</attribute>
+<attribute name="tablename">art_log_events_t</attribute>
+<!-- Batch will be commited if Time Out happens before the batch size reached. -->
+<attribute name="thread.timeout">5000</attribute>
+<!-- JDBC Connection Pool Size -->
+<attribute name="threadPoolSize">5</attribute>
+</map>
+</connector>
+<connector cid="3" logLevel="3">
+<name enable="false" class="com.spartan.sprinkler.connectors.syslog.SyslogConnector"  id="socket.udp.syslog" isSystemDefined="false">SyslogConnector</name>
+<map>
+<!-- Syslog Receiver IP Address -->
+<attribute name="hostname">192.168.2.28</attribute>
+<!-- Syslog Receiver Port Number -->
+<attribute name="port">5001</attribute>
+</map>
+</connector>
+<connector cid="4" logLevel="3">
+<name enable="false" class="com.spartan.sprinkler.connectors.socket.SocketConnector"  id="socket.tcp.server" isSystemDefined="false">TCPSocketConnector</name>
+<map>
+<!-- Server IP Address / Host Name -->
+<attribute name="hostname">192.168.2.40</attribute>
+<!--  Server Port Number -->
+<attribute name="port">4444</attribute>
+</map>
+</connector>
+<connector cid="1" logLevel="0">
+<name enable="true" class="com.spartan.sprinkler.connectors.file.FileConnector"  id="file.connector" isSystemDefined="true">FileConnector</name>
+<map>
+<!-- File Roll Over based on Time -->
+<attribute name="file.rollover.time">1</attribute>
+<!-- File Roll Over based on File Size. -->
+<attribute name="file.rollover.size">100</attribute>
+<attribute name="output.path">/home/applifire/logs</attribute>
+<attribute name="backup.date.pattern">yyyyMMddHHmmss</attribute>
+<!-- Keep Latest X number of Backup Files. Valid values = Greater than ZERO or MINUS 1 If you want to keep all the files then give -1 -->
+<attribute name="backup.keep.last.x.files">2</attribute>
+<!--  Flush time in seconds -->
+<attribute name="flush.period">60</attribute>
+<!--  Buffer size in KB -->
+<attribute name="buffer.size">1</attribute>
+<attribute name="backup.path">/home/applifire/logs/backups</attribute>
+<!-- File Roll Over Size Unit. Valid Values (MB, GB) -->
+<attribute name="file.rollover.size.unit">MB</attribute>
+<!-- File Roll Over Policy 0 - Based on Time ONLY 1 - Based on Size ONLY 2 - Based on Time or Size, which ever happens first. -->
+<attribute name="file.rollover.policy">0</attribute>
+<!-- File Roll Over Time Unit Valid values (Hours, Days, Months) -->
+<attribute name="file.rollover.time.unit">Hours</attribute>
+</map>
+</connector>
+</connectors>
+</AppLogConfig>
